@@ -108,10 +108,10 @@ alias pr-create='gh pr create && hflabels && assignme'
 alias need-dev='gh pr edit $(git rev-parse --abbrev-ref HEAD) --add-label "need-dev"'
 
 # These came from https://dev.to/joaovitor/exa-instead-of-ls-1onl
-alias l='exa'
-alias la='exa -a'
-alias ll='exa -lah'
-alias ls='exa --color=auto'
+alias ls='exa --group-directories-first --color=auto'
+alias ll='ls -lh'
+alias la='ll -a'
+alias cc="clear"
 
 # remove username@hostname in prompt as advised at
 # https://github.com/ohmyzsh/ohmyzsh/issues/5581#issuecomment-256825141
